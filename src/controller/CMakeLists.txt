@@ -45,7 +45,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(${PROJECT_NAME}_node src/controller_node.cpp src/MockController.cpp)
+add_executable(${PROJECT_NAME}_node src/controller_node.cpp src/RvizController.cpp)
 
 target_link_libraries(${PROJECT_NAME}_node
   ${catkin_LIBRARIES}

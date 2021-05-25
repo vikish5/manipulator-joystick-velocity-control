@@ -2,10 +2,10 @@
 
   <node name="controller_node" 
         pkg="controller" 
-        type="controller_node.py"
+        type="controller_node"
         respawn="false" output="screen">
-    <!-- <rosparam command="load"
-          file="$(find robots)/3_dof_robot/configs/kinematics.yaml"/> -->
+    <rosparam command="load"
+          file="/home/nikita/dev/open_manipulator_p/src/open_manipulator_p/open_manipulator_p_description/kinematics.yaml"/>
   </node>
 
 </launch>
